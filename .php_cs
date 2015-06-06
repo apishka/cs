@@ -1,0 +1,69 @@
+<?php
+
+$finder = Symfony\CS\Finder\DefaultFinder::create()
+    ->in('source')
+    ->in('tests')
+;
+
+$config = Symfony\CS\Config\Config::create();
+$config->level(null);
+$config->fixers(
+    array(
+        'encoding',
+        'short_tag',
+        'duplicate_semicolon',
+        'elseif',
+        'eof_ending',
+        'function_call_space',
+        'function_declaration',
+        'indentation',
+        'line_after_namespace',
+        'linefeed',
+        'lowercase_constants',
+        'lowercase_keywords',
+        'method_argument_space',
+        'multiple_use',
+        'parenthesis',
+        'php_closing_tag',
+        'trailing_spaces',
+        'visibility',
+        'empty_return',
+        'join_function',
+        'list_commas',
+        'multiline_array_trailing_comma',
+        'namespace_no_leading_whitespace',
+        'no_blank_lines_after_class_opening',
+        'object_operator',
+        'phpdoc_indent',
+        'phpdoc_no_access',
+        'phpdoc_no_empty_return',
+        'phpdoc_no_package',
+        'phpdoc_params',
+        'phpdoc_scalar',
+        'phpdoc_separation',
+        'phpdoc_trim',
+        'phpdoc_type_to_var',
+        'phpdoc_var_without_name',
+        'remove_leading_slash_use',
+        'remove_lines_between_uses',
+        'return',
+        'self_accessor',
+        'single_array_no_trailing_comma',
+        'single_quote',
+        'spaces_cast',
+        'standardize_not_equal',
+        'ternary_spaces',
+        'trim_array_spaces',
+        'unary_operators_spaces',
+        'unused_use',
+        'whitespacy_lines',
+        'align_double_arrow',
+        'concat_with_spaces',
+        'no_blank_lines_before_namespace',
+        'ordered_use',
+        'phpdoc_order',
+    )
+);
+$config->finder($finder);
+
+return $config;

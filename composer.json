@@ -1,0 +1,11 @@
+{
+    "name": "apishka/cs",
+    "description": "Apishka Coding Style Standart",
+    "keywords": ["apishka", "cs", "coding", "style"],
+    "authors": [
+        {
+            "name": "Evgeny Reykh",
+            "email": "evgeny@reykh.com"
+        }
+    ]
+}
