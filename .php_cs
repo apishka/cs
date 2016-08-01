@@ -1,9 +1,17 @@
 <?php
 
-$finder = Symfony\CS\Finder\DefaultFinder::create()
-    ->in('source')
-    ->in('tests')
-;
+$finder = Symfony\CS\Finder\DefaultFinder::create();
+
+if (!isset($phpcs_folders))
+{
+    $phpcs_folders = array(
+        'source',
+        'tests',
+    );
+}
+
+foreach ($phpcs_folders as $folder)
+    $finder->in($folder);
 
 $config = Symfony\CS\Config\Config::create();
 $config->level(null);
