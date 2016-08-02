@@ -29,7 +29,7 @@ $config->fixers(
         'php_closing_tag',
         'trailing_spaces',
         'visibility',
-        //'double_arrow_multiline_whitespaces',
+        'double_arrow_multiline_whitespaces',
         'duplicate_semicolon',
         'empty_return',
         'extra_empty_lines',
