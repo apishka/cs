@@ -40,7 +40,7 @@ $config->fixers(
         'namespace_no_leading_whitespace',
         'no_blank_lines_after_class_opening',
         'object_operator',
-        'operators_spaces',
+        //'operators_spaces',
         'phpdoc_indent',
         'phpdoc_no_access',
         'phpdoc_no_empty_return',
