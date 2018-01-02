@@ -19,7 +19,7 @@ $config = PhpCsFixer\Config::create()
             //    'align_double_arrow' => true,
             //),
             'blank_line_after_namespace' => true,
-            'blank_line_after_opening_tag' => true,
+            //'blank_line_after_opening_tag' => true,
             'blank_line_before_return' => true,
             'cast_spaces' => true,
             'class_definition' => array(
@@ -27,7 +27,7 @@ $config = PhpCsFixer\Config::create()
                 'singleItemSingleLine' => true,
                 'multiLineExtendsEachSingleLine' => true
             ),
-            'class_keyword_remove' => true,
+            //'class_keyword_remove' => true,
             //'combine_consecutive_unsets' => true,
             'concat_space' => array(
                 'spacing' => 'one'
