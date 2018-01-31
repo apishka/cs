@@ -56,6 +56,7 @@ $config = PhpCsFixer\Config::create()
             'new_with_braces' => true,
             'no_alias_functions' => true,
             'no_blank_lines_after_class_opening' => true,
+            'no_blank_lines_after_phpdoc' => true,
             //'no_blank_lines_before_namespace' => true,
             'no_closing_tag' => true,
             'no_empty_comment' => true,
