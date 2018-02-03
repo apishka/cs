@@ -14,6 +14,10 @@ $config = PhpCsFixer\Config::create()
     ->setFinder($finder)
     ->setRules(
         array(
+            'align_multiline_comment' => true,
+            'array_syntax' => [
+                'syntax' => 'short',
+            ],
             //'binary_operator_spaces' => array(
             //    'align_equals' => false,
             //    'align_double_arrow' => true,
@@ -113,16 +117,19 @@ $config = PhpCsFixer\Config::create()
             //),
             'ordered_imports' => true,
             'phpdoc_add_missing_param_annotation' => true,
-            'phpdoc_align' => true,
+            //'phpdoc_align' => true,
             'phpdoc_annotation_without_dot' => true,
             'phpdoc_indent' => true,
             'phpdoc_no_access' => true,
-            'phpdoc_no_alias_tag' => true,
+            'phpdoc_no_alias_tag' => [
+                'type' => 'var',
+                'link' => 'see'
+            ],
             'phpdoc_no_empty_return' => true,
             'phpdoc_no_package' => true,
-            'phpdoc_order' => true,
+            //'phpdoc_order' => true,
             'phpdoc_scalar' => true,
-            'phpdoc_separation' => true,
+            //'phpdoc_separation' => true,
             'phpdoc_single_line_var_spacing' => true,
             'phpdoc_trim' => true,
             'phpdoc_types' => true,
